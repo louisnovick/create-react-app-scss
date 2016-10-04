@@ -1,0 +1,28 @@
+// ex. color: palette(ocean, light);
+
+$white: #FFFFFF;
+$marble: #FCFFF5;
+$forest: #91AA9D;
+$ocean: #193441;
+
+$palettes: (
+    marble: (
+        base:   $marble,
+        light:  lighten($marble, 10%),
+        dark:   darken($marble, 10%)
+    ),
+    forest: (
+        base:  $forest,
+        light: lighten($forest, 10%),
+        dark:  darken($forest, 10%)
+    ),
+    ocean: (
+        base:  $ocean,
+        light: lighten($ocean, 10%),
+        dark:  darken($ocean, 10%)
+    )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}

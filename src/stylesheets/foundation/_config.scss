@@ -1,0 +1,30 @@
+// Coloring
+$b-color: palette(ocean, base);
+$b-color-inverse: palette(marble, base);
+$b-background: $white;
+$b-background-inverse: $ocean;
+
+// Transitions
+$b-ease-transition: .25s all ease-out;
+
+// Border Radius
+$b-borderRadius: 0px;
+
+// Shadow
+$b-boxShadow: none;
+
+// Max Width
+$b-maxWidth: 1600px;
+
+// Spacing
+$b-space: 1.5em;
+$b-space-xs: $b-space * 0.25;
+$b-space-s: $b-space * 0.5;
+$b-space-l: $b-space * 2;
+$b-space-xl: $b-space * 4;
+
+// Typography
+$b-fontSize: 1em;
+$b-lineHeight: 1.2em;
+$b-fontFamily: sans-serif;
+$b-fontFamily-heading: sans-serif;

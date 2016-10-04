@@ -1,0 +1,16 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: $b-background;
+  color: $b-color;
+  font-family: $b-fontFamily;
+  font-size: $b-fontSize;
+  line-height: $b-lineHeight;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 100%;
+}

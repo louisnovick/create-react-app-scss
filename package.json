@@ -1,0 +1,27 @@
+{
+  "name": "react-starter-scss",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "concurrently": "^3.1.0",
+    "node-sass": "^3.10.1",
+    "postcss-cli": "^2.6.0",
+    "react-scripts": "0.6.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "concurrently --names 'webpack, styles, autoprefixer' --prefix name 'npm run start' 'npm run styles:watch' 'npm run autoprefixer'",
+    "styles": "node-sass --output-style compressed --include-path scss src/stylesheets/app.scss src/app.css",
+    "styles:watch": "node-sass --output-style compressed -w --include-path scss src/stylesheets/app.scss src/app.css postcss -u autoprefixer --autoprefixer.browsers 'last 2 version' -r src/app.css",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 version' -r src/app.css",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

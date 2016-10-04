@@ -1,0 +1,28 @@
+// *************************************
+//
+//   Button
+//   -> A Button
+//   ex. <a href="#" class="btn"></a>
+//
+// *************************************
+
+.btn {
+  background-color: $b-background-inverse;
+  color: $white;
+  border-radius: $b-borderRadius;
+  padding: $b-space * .5 $b-space;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  line-height: $b-lineHeight;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  transition: $b-ease-transition;
+  &:hover, &:active {
+    background-color: darken($b-background-inverse, 10%);
+  }
+}

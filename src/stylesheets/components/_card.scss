@@ -1,0 +1,22 @@
+// *************************************
+//
+//   Card
+//   -> Individual style containers
+//
+// *************************************
+
+.card {
+  background-color: palette(marble, base);
+  color: $ocean;
+  border-radius: $b-borderRadius;
+  box-shadow: $b-boxShadow;
+  padding: $b-space;
+  position: relative;
+
+  // Might make this a modifier
+  height: 100%;
+}
+
+.App-logo {
+  max-width: 150px;
+}
